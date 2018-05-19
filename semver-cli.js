@@ -51,11 +51,11 @@ exec(`git tag ${JSONContent.version}`, (error) => {
 
 
 if(program.push) {
-    exec(`git push origin ${JSONContent.version}`, (error, stdout) => {
+    exec(`git push origin ${JSONContent.version}`, (error) => {
         if (error) {
             console.error(`exec error: ${error}`);
             return;
         }
-        console.log(`stdout: ${stdout}`);
+        console.log(`Tag ${JSONContent.version} pushed to origin`);
     });
 }
