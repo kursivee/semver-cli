@@ -1,0 +1,11 @@
+{
+  "name": "semver-lite",
+  "version": "1.0.3",
+  "description": "Lightweight app that updates package.json and creates git tag",
+  "main": "index.js",
+  "author": "kursivee",
+  "license": "MIT",
+  "dependencies": {
+    "semver": "^5.5.0"
+  }
+}
